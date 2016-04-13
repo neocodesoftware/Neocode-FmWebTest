@@ -26,16 +26,15 @@ FileMaker Web test tool save result, log errors and performance.
 
 == Run It
  Emulates user activity on server
-Usage: workflow.php --threads=X [--repeat=Y]  [--workflow=WORKFLOW]
+ Usage: workflow.php --threads=X [--repeat=Y]  [--workflow=WORKFLOW]
                     [--log=(FILE|CONSOLE|NULL)] [--weblog=(FILE|CONSOLE|NULL)] [--errlog=(FILE|CONSOLE|NULL)]
-
-  X - number of simultaneous requests to your server
-  Y - number of repetitions
-  WORKFLOW - coma separated list of actions defined in workflow_data.php
-    for example: login,page_open,page_post,page_open
-    by default WORKFLOW defined in config.ini will be used
-  log - where to send app output, default: FILE. Logs will be saved in var/workflow.log
-  weblog - where to send web pages output, default: FILE. Logs will be saved in var/workflow_web.log
-  errlog - where to send web pages errors, default: FILE. Logs will be saved in var/workflow_err.log
-    CONSOLE - logs are send in the console
-    NULL - no logs
+   X - number of simultaneous requests to your server
+   Y - number of repetitions
+   WORKFLOW - coma separated list of actions defined in workflow_data.php
+     for example: login,page_open,page_post,page_open
+     by default WORKFLOW defined in config.ini will be used
+   log - where to send app output, default: FILE. Logs will be saved in var/workflow.log
+   weblog - where to send web pages output, default: FILE. Logs will be saved in var/workflow_web.log
+   errlog - where to send web pages errors, default: FILE. Logs will be saved in var/workflow_err.log
+     CONSOLE - logs are send in the console
+     NULL - no logs
