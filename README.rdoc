@@ -1,0 +1,41 @@
+
+  ______     __          __  _
+ |  ____|    \ \        / / | |
+ | |__ _ __ __\ \  /\  / /__| |__
+ |  __| '_ ` _ \ \/  \/ / _ \ '_ \
+ | |  | | | | | \  /\  /  __/ |_) |
+ |_|  |_| |_| |_|\/  \/ \___|_.__/
+
+       _______        _
+      |__   __|      | |
+         | | ___  ___| |_
+         | |/ _ \/ __| __|
+         | |  __/\__ \ |_
+         |_|\___||___/\__|
+
+== FmWeb Test
+FileMaker Web test tool send POST and GET requests to your web server emulating user activity.
+FileMaker Web test tool save result, log errors and performance.
+
+== Requirements
+    PHP
+
+== Configuration
+* Enable PHP threads according to http://emrahmehmedov.blogspot.ca/2013/03/php-and-multi-thread-on-windows.html
+* Update workflow_data.php
+
+== Run It
+ Emulates user activity on server
+Usage: workflow.php --threads=X [--repeat=Y]  [--workflow=WORKFLOW]
+                    [--log=(FILE|CONSOLE|NULL)] [--weblog=(FILE|CONSOLE|NULL)] [--errlog=(FILE|CONSOLE|NULL)]
+
+  X - number of simultaneous requests to your server
+  Y - number of repetitions
+  WORKFLOW - coma separated list of actions defined in workflow_data.php
+    for example: login,page_open,page_post,page_open
+    by default WORKFLOW defined in config.ini will be used
+  log - where to send app output, default: FILE. Logs will be saved in var/workflow.log
+  weblog - where to send web pages output, default: FILE. Logs will be saved in var/workflow_web.log
+  errlog - where to send web pages errors, default: FILE. Logs will be saved in var/workflow_err.log
+    CONSOLE - logs are send in the console
+    NULL - no logs
