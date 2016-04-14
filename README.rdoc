@@ -14,10 +14,12 @@
          |_|\___||___/\__|
 
 == FmWeb Test
-FileMaker Web test tool send POST and GET requests to your web server emulating user activity.
+FileMaker Web test tool sends POST and GET requests to your FileMaker web server to simulate user activity.
 FileMaker Web test tool save result, log errors and performance.
+This tools lets you determine how much load your application puts on your server.
 
 == Requirements
+    Windows 7+ / 2008+
     PHP
 
 == Configuration
